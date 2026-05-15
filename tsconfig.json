@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".", // Thư mục gốc của dự án
+		"paths": {
+			"@/*": ["src/*"] // Alias '@' trỏ đến thư mục src
+		},
+		"jsx": "react-jsx"
+		// Các cấu hình khác...
+	},
+	"include": [
+		"src/**/*" // Bao gồm tất cả tệp trong thư mục src
+	],
+	"references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }]
+}
