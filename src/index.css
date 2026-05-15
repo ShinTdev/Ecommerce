@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+@theme {
+	--width-primary: 1600px;
+	--width-w480: 480px;
+
+	--font-lh-35: 35px;
+
+	--text-p30: 30px;
+	--text-p28: 28px;
+	--text-p20: 20px;
+	--text-p14: 14px;
+
+	--color-grayText: #707070;
+	--color-grayBg: #f5f5f5;
+	--color-primary: #02224d;
+	--color-bgButton: #742cfe;
+	--color-line: #d7d7d7;
+	--color-roundedColor: #eee;
+	--color-border-custom: #742cfe3b;
+	--color-border-popover: #eee;
+	--color-paragraph: #02224d80;
+	--color-PurpleText: #742cfe;
+
+	--padding-p60: 60px;
+	--padding-p50: 50px;
+	--padding-p40: 40px;
+
+	--margin-m50: 50px;
+	--margin-m30: 30px;
+	--margin-m20: 20px;
+
+	--margin-mb-15: 15px;
+	--margin-mb-20: 20px;
+
+	--shadow-input: 0 3px 3px #00000029;
+}
+
+@layer utilities {
+	.leading-lh-35 {
+		line-height: var(--font-lh-35);
+	}
+
+	.my-container {
+		max-width: 1600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.border-custom {
+		border-color: var(--color-border-custom);
+	}
+
+	.border-popover {
+		border-color: var(--color-border-popover);
+	}
+
+	.color-paragraph {
+		color: var(--color-paragraph);
+	}
+}
+
+@utility container {
+	max-width: unset;
+	width: unset;
+}
+
+:root {
+	font-family: Nunito, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+}
+
+p {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.font-13 {
+	font-size: 13px;
+	line-height: 17px;
+	letter-spacing: 0.3px;
+}
+
+.font-14 {
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: 0.64px;
+}
+
+.font-18 {
+	font-size: 18px;
+	line-height: 28pxl;
+}
+
+.font-24 {
+	font-size: 24px;
+	line-height: 34px;
+}
+
+.font-28 {
+	font-size: 28px;
+	line-height: 38px;
+}
+
+.font-38 {
+	font-size: 38px;
+	line-height: 48px;
+}
+
+.font-48 {
+	font-size: 48px;
+	line-height: 58px;
+}
+
+::picker(select) {
+	@apply border-0 shadow-sm;
+}
